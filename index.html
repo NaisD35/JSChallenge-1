@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/style/app.css">
+    <title>Cirkle | Traffic-based pricing</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    <main>
+      <div class="card">
+
+        <div class="card-params">
+          <p class="card-params__pageviews">
+            <span id="pageviews">50K</span>
+            PAGEVIEWS
+          </p>
+          <p class="card-params__price">
+            <span id="permonth">$8.00</span>
+             /month
+          </p>
+        </div>
+
+        <div class="card-range">
+          <input id="range" type="range" min="0" max="100" oninput="range.value=value">
+        </div>
+
+        <div class="card-billing">
+          <p>
+            Monthly Billing
+          </p>
+          <div class="card-billing__slider">  
+            <input type="checkbox" value="None" id="slideOne" name="slideOne"/>
+            <label for="slideOne"></label>
+          </div>
+          <div class="card-billing__yearly">
+            <p>
+              Yearly Billing 
+            </p>
+            <span>25% discount</span> 
+          </div>
+        </div>
+
+        <div class="card-offer">
+          <div class="card-offer__check">
+            <p>Unlimited websites</p>
+            <p>100% data ownership</p>
+            <p>Email reports</p>
+          </div>
+          <div class="card-offer__btn">
+            <a href="#">Start my trial</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      </p>
+      <p>
+        Coded by <a href="naisdebanne.com">Naïs Debanne</a>.
+      </p>
+    </footer>
+  </body>
+
+  <script src="/script.js"></script>
+</html>
